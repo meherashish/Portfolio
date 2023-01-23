@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .carousel img {
+            width: 100%;
+            height: 600px;
+        }
+        .card-body img {
+            width: 50%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <header>
+        <div class="navbar navbar-expand-lg  bg-white px-3 border-bottom fixed-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand fs-2 ">Techno-<span class="text-primary">web</span></a>
+                <button class="navbar-toggler"  data-bs-toggle="collapse"  data-bs-target="#support-content">
+                    <span class="navbar-toggler-icon"></span>    
+                </button>
+                <div class="navbar-collapse collapse" id="support-content" >
+                    <ul class="navbar-nav ms-auto fs-6 text-center">
+                        <li class="nav-item">
+                            <a href="" class="nav-link text-primary"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#About" class="nav-link"> About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Service</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#service"> Another </a></li>
+                                <li class="dropdown-item"><a href="#service"> Another link</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#team" class="nav-link">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="carousel slide" id="banner">
+            <div class="carousel-inner" data-bs-ride="carousel">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="../public/images/template/banner.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../public/images/template/banner1.jpg" class="d-block w-100" >
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../public/images/template/banner.jpg" class="d-block w-100" >
+                </div>
+            </div>
+            <button data-bs-target="#banner" data-bs-slide="prev" class="carousel-control-prev "><span class="carousel-control-prev-icon"></span></button>
+            <button data-bs-target="#banner" data-bs-slide="next" class="carousel-control-next"><span class="carousel-control-next-icon"></span></button>
+            <div class="carousel-indicators">
+                <button data-bs-slide-to="0" class="active" data-bs-target="#banner"></button>
+                <button data-bs-slide-to="1" data-bs-target="#banner"></button>
+                <button data-bs-slide-to="2" data-bs-target="#banner"></button>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid my-5 " id="About">
+        <div class="container-fluid">
+            <div class="text-center my-5">
+                <h2 data-aos="fade-up">About <span class="text-primary">Me</span></h2>
+                <hr class="w-25 m-auto ">
+            </div>
+            <div class="row">
+                <div class="col-6" >
+                    <h2>What do you <span class="text-primary">want to Know?</span></h2>
+                    <p class="p-2">Use our website mobile-frist flexbox grid
+                        layout afa all shape and size thanks ro a -twelve
+                        column system , six default responsive tiers , Sass
+                        variables and micins, and dozens of predefined classes
+                    </p>
+                    <button class="btn btn-light mb-5">More About Me</button>
+                    <div class="accordion" id="main-head">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button data-bs-toggle="collapse" data-bs-target="#A1"  class="accordion-button btn btn-light w-100 bg-white">
+                                    My Hobbies
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="A1" data-bs-parent="#main-head">
+                                <div class="accordion-body">
+                                    <p><b>This is the item's accordion body.</b> It is hidden by defaukt untill
+                                    the collapse plug in adds the appropite
+                                    the classes that we use to style each element.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button data-bs-toggle="collapse" data-bs-target="#heading-2"  class="accordion-button btn btn-light w-100 bg-white">
+                                    My Hobbies
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="heading-2" data-bs-parent="#main-head">
+                                <div class="accordion-body">
+                                    <p><b>This is the item's accordion body.</b> It is hidden by defaukt untill
+                                    the collapse plug in adds the appropite
+                                    the classes that we use to style each element.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button data-bs-toggle="collapse" data-bs-target="#heading-3"  class="accordion-button btn btn-light w-100 bg-white">
+                                    My Hobbies
+                                </button>
+                            </div>
+                            <div class="accordion-collapse collapse" id="heading-3" data-bs-parent="#main-head">
+                                <div class="accordion-body">
+                                    <p><b>This is the item's accordion body.</b> It is hidden by defaukt untill
+                                    the collapse plug in adds the appropite
+                                    the classes that we use to style each element.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 text-end img-fluid" data-aos="zoom-in">
+                    <img src="../public/images/template/s4.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5 bg-light" id="service">
+        <div class="container-fluid">
+            <div class="text-center my-5">
+                <h2 data-aos="fade-up" >Our <span class="text-primary">Service</span></h2>
+                <hr class="w-25 m-auto ">
+            </div>
+            <div class="row mb-5 container-fluid">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="bi bi-unity bg-primary p-1 text-white rounded"></span>
+                            <h2 class="card-title">App Development</h2>
+                            <p class="card-text">with supporting text below as a natural lead
+                                in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bg-primary">
+                        <div class="card-body  text-white">
+                            <span class="bi bi-unity bg-white p-1 text-dark rounded mb-3"></span>
+                            <h3 class="card-title">Web Development</h3>
+                            <p class="card-text">with supporting text below as a natural lead
+                                in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-light">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="bi bi-unity bg-primary p-1 text-white rounded mb-3"></span>
+                            <h2 class="card-subtitle">Web Development</h2>
+                            <p class="card-text">with supporting text below as a natural lead
+                                in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row container-fluid">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="bi bi-unity bg-primary p-1 text-white rounded mb-3"></span>
+                            <h2 class="card-title">App Development</h2>
+                            <p class="card-text">with supporting text below as a natural lead
+                                in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bg-primary">
+                        <div class="card-body text-white">
+                            <span class="bi bi-code bg-white text-dark p-1 rounded mb-3 "></span>
+                            <h2 class="card-subtitle">Web Development</h2>
+                            <p class="card-text">with supporting text below as a natural lead
+                                in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-light">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="bi bi-unity bg-primary p-1 text-white rounded mb-4"></span>
+                            <h2 class="card-title">Web Development</h2>
+                            <p class="card-text">with supporting text below as a natural lead
+                                in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team my-5 text-center container" id="team" >
+        <div class="container text-center">
+            <div class="text-center my-5">
+                <h2 data-aos="fade-up" >Our <span class="text-primary">Team</span></h2>
+                <hr class="w-25 m-auto ">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card"  data-aos="zoom-in">
+                    <div class="card-body">
+                        <img  src="../public/images/template/s4.jpg" class="card-img-fluid rounded-circle border border-1 p-2">
+                    <h5 class="card-title mt-4">Andrew</h5>
+                    <p class="card-text">Front End Developer</p>
+                    <a href="#" class="btn btn-primary w-50"> Read more </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card"  data-aos="zoom-in">
+                    <div class="card-body">
+                        <img src="../public/images/template/s2.jpg" class="card-img-fluid rounded-circle border border-1 p-2">
+                    <h5 class="card-title mt-4">Keren Dseuza</h5>
+                    <p class="card-text">App Developer</p>
+                    <a href="#" class="btn btn-primary w-50"> Read more </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card"  data-aos="zoom-in">
+                    <div class="card-body">
+                        <img src="../public/images/template/s3.jpg" class="card-img-fluid rounded-circle border border-1 p-2">
+                    <h5 class="card-title mt-4">Keren Dseuza</h5>
+                    <p class="card-text">App Developer</p>
+                    <a href="#" class="btn btn-primary w-50"> Read more </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact container" id="contact">
+        <div class="container">
+            <div class="text-center my-5">
+                <h2 data-aos="fade-up" class="mt-4">Feel Free <span class="text-primary">To Connect</span></h2>
+                <hr class="w-25 m-auto ">
+        </div>
+        <div class="row container">
+            <div class="col">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">State</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                  </form>
+            </div>
+            <div class="col container m-auto text-end "  data-aos="zoom-in">
+                <img src="../public/images/template/team6.jpg" class=" m-auto p-4 text-end border ">
+            </div>
+        </div>
+    </section>
+    <div>
+        <div>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#help">Help ?</button>
+            <div class="modal" id="help">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ask Qustion?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Some Text here..</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

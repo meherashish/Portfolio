@@ -2,117 +2,19 @@
 <html lang="en">
     <head>
 		<title>Responsive One Page Website Using HTML CSS & Bootstrap</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-            body {
-	            font-family: 'Roboto', sans-serif;
-            }
-            a.navbar-brand img {
-                width: 130px;
-            }
-            .nav-link {
-                padding-right: 1rem !important;
-                padding-left: 1rem !important;
-            }
-            .cover {
-                background-image:url("/img/naruto-banner.png");
-                background-size: cover;
-                min-height: 100vh;
-            }
-            .cover-content {
-                min-height: 100vh;
-            }
-            .cover-content img {
-                max-width: 200px;
-                border:2px solid #fff;
-            }
-            ul.navbar-nav li a {
-                font-size: 20px;
-            }
-            .navbar-dark .navbar-nav .nav-link {
-                color: #fff;
-            }
-            .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-                color: #eeb22b;
-            }
-            .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-                color: #e25933;
-            }
-            button.play:hover {
-                color: #eeb22b;
-                background: transparent;
-                border: 2px solid #e15433;
-            }
-            button.play {
-                height: 40px;
-                width: 120px;
-                border-radius: 50px;
-                font-size: 15px;
-                font-weight: 500;
-                padding: 0 10px;
-                cursor: pointer;
-                outline: none;
-                transition: all 0.3s ease;
-                background-image: linear-gradient(to right, #eeb22b , #e15433);
-                color: #fff;
-                border: none;
-            }
-            .h1 img {
-                width: 35px;
-                margin-top: -8px;
-            }
-            .about {
-                background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/img/About-BG.png);
-                background-size: cover;
-                background-position: center;
-            }
-            footer span {
-                color: #eeb22b;
-            }
-            #contact-form input, #contact-form textarea {
-                color: #e15433;
-                border: 2px solid #eeb22b;
-                border-radius: 10px;
-                outline: none;
-                box-shadow: none;
-            }
-            .mobPlay {
-                    display: none;
-            }
-            @media screen and (max-width: 760px) {
-                .play {
-                    display: none;
-                }
-
-                .mobPlay {
-                    display: block;
-                    margin-left: 20px;
-                }
-                
-                .cover-content h1 {
-                    font-size: 36px;
-                    font-weight: bold;
-                    padding-top: 30px;
-                }
-
-                .cover-content h6 {
-                    font-size: 15px;
-                }
-            }
-        </style>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/style.css">
     </head>
+
     <body data-bs-spy="scroll" data-bs-target="#nav-scroll" >
         <header class="Header" id="home">
             <nav id="nav-scroll" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div class="container">
-                    <a href="#home" class="navbar-brand"><img src="../img/naruto-logo.png"></a>
+                    <a href="#home" class="navbar-brand"><img src="/img/naruto-logo.png"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -143,29 +45,29 @@
         <section class="container py-5" id="anime">
             <div class="section-title text-center pt-5">
 				<h1 class="h1 mb-4">
-					<img src="../img/blade.png" />
+					<img src="/img/blade.png" />
 					<span>Anime</span>
-					<img src="../img/blade.png" />
+					<img src="/img/blade.png" />
 				</h1>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-5">
-                    <img class="img-fluid img-thumbnail" src="../img/sasuke.png">
+                    <img class="img-fluid img-thumbnail" src="/img/sasuke.png">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5">
-                    <img class="img-fluid img-thumbnail" src="../img/naruto.png">
+                    <img class="img-fluid img-thumbnail" src="/img/naruto.png">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5">
-                    <img class="img-fluid img-thumbnail" src="../img/kakashi.png">
+                    <img class="img-fluid img-thumbnail" src="/img/kakashi.png">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5">
-                    <img class="img-fluid img-thumbnail" src="../img/guy.png">
+                    <img class="img-fluid img-thumbnail" src="/img/guy.png">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5">
-                    <img class="img-fluid img-thumbnail" src="../img/gaara.png">
+                    <img class="img-fluid img-thumbnail" src="/img/gaara.png">
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5">
-                    <img class="img-fluid img-thumbnail" src="../img/lee.png">
+                    <img class="img-fluid img-thumbnail" src="/img/lee.png">
                 </div>
             </div>
         </section>
@@ -173,9 +75,9 @@
             <div class="container about-content">
                 <div class="section-title text-center pt-5">
 					<h1 class="h1">
-						<img src="../img/white-blade.png" />
+						<img src="/img/white-blade.png" />
 						<span>About Naruto</span>
-						<img src="../img/white-blade.png" />
+						<img src="/img/white-blade.png" />
 					</h1>
                 </div>
                 <div class="row">
@@ -192,9 +94,9 @@
             <div class="container py-5">
                 <div class="section-title text-center pt-5">
 					<h1 class="h1">
-						<img src="../img/blade.png">
+						<img src="/img/blade.png" />
 						<span>Contact</span>
-						<img src="../img/blade.png">
+						<img src="/img/blade.png" />
 					</h1>
                 </div>				
                 <div class="row">
@@ -221,7 +123,7 @@
             </div>
         </section>
         <footer class="text-center bg-dark mb-0 py-4">
-            <p class="text-white m-0">@All Right Reserved | Made by Me </span></p>
+            <p class="text-white m-0">@All Right Reserved || made by <span>(Keyframe Effects)</span></p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>

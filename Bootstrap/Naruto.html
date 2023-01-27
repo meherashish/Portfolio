@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Responsive One Page Website Using HTML CSS & Bootstrap</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../src/styles/templates.css">
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#nav-scroll" >
+        <header class="Header" id="home">
+            <nav id="nav-scroll" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a href="#home" class="navbar-brand"><img src="../img/naruto-logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#anime" class="nav-link">Anime</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">About Naruto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="play mobPlay">Play Now</button>
+                            </li>
+                        </ul>
+                    </div>
+					<button class="play">Play Now</button>
+                </div>
+            </nav>
+            <div class="cover container-fluid text-white"></div>
+        </header>
+        <section class="container py-5" id="anime">
+            <div class="section-title text-center pt-5">
+				<h1 class="h1 mb-4">
+					<img src="../img/blade.png" />
+					<span>Anime</span>
+					<img src="../img/blade.png" />
+				</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <img class="img-fluid img-thumbnail" src="../img/sasuke.png">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <img class="img-fluid img-thumbnail" src="../img/naruto.png">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <img class="img-fluid img-thumbnail" src="../img/kakashi.png">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <img class="img-fluid img-thumbnail" src="../img/guy.png">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <img class="img-fluid img-thumbnail" src="../img/gaara.png">
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <img class="img-fluid img-thumbnail" src="../img/lee.png">
+                </div>
+            </div>
+        </section>
+        <section class="about py-5 text-white" id="about">
+            <div class="container about-content">
+                <div class="section-title text-center pt-5">
+					<h1 class="h1">
+						<img src="../img/white-blade.png" />
+						<span>About Naruto</span>
+						<img src="../img/white-blade.png" />
+					</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center pt-5 pb-3">Who Am I?</h3>
+                        <p style="text-align: justify" class="text-white">From its debut in 1999, all the way to its stunning conclusion—look back on the trials and tribulations of an outcast ninja’s coming of age and the famous scenes that shaped his story!!</p>
+                        <p style="text-align: justify" class="text-white">Maecenas porttitor ornare orci. Aenean nulla tellus, viverra sit amet sapien et, vehicula porta nulla. Nunc nec varius dui. Vestibulum placerat sapien sollicitudin orci tempus, at molestie enim consectetur. Aliquam sed purus blandit, aliquam felis sed, tincidunt ante. Nunc eu consectetur orci, a gravida neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Orci varius natoque penatibus et magnis dis parturient montes.</p>						
+                        <p style="text-align: justify" class="text-white">Maecenas porttitor ornare orci. Aenean nulla tellus, viverra sit amet sapien et, vehicula porta nulla. Nunc nec varius dui. Vestibulum placerat sapien sollicitudin orci tempus, at molestie enim consectetur. Aliquam sed purus blandit, aliquam felis sed, tincidunt ante. Nunc eu consectetur orci, a gravida neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Orci varius natoque penatibus et magnis dis parturient montes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container py-5">
+                <div class="section-title text-center pt-5">
+					<h1 class="h1">
+						<img src="../img/blade.png">
+						<span>Contact</span>
+						<img src="../img/blade.png">
+					</h1>
+                </div>				
+                <div class="row">
+                    <form action="#" id="contact-form" class="col-md-10 mx-auto py-5">
+                        <div class="form-group mb-3">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email Address</label>
+                            <input id="email" type="email" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="message">Message</label>
+							<textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input id="checkbox" type="checkbox" class="form-check-input">
+                            <label class="form-check-label" for="checkbox">Check me out</label>
+                        </div>						
+						<button class="play">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center bg-dark mb-0 py-4">
+            <p class="text-white m-0">@All Right Reserved || made by <span>(Keyframe Effects)</span></p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

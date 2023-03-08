@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <script>
+     var code = {"pin": "1234"}
+      var error = 3 ;
+    function SubmitClick(){
+      var password= document.getElementById("password").value;
+      if(password===code.pin){
+        document.write("Login Sucsess");
+      } else {
+        error--;
+        document.getElementById("result").innerHTML = `${error} attempt left`;
+      } if(error==0){
+        document.getElementById("result").innerHTML = "Blocked";
+        document.getElementById("btnSubmit").disabled= true;
+      }
+    }
+  </script>
+</head>
+<body class="container-fluid align-item-center text-center ">
+  <div class="container-fluid mt-4 justify-content-center text-align-center border border-3 border-dark p-4 w-25">
+    <h1>Pin Verification</h1>
+    <div class="justify-content-center align-item-center mt-4">
+      <input type="password" id="password" placeholder="1234" class="form-control w-100">
+      <p id="result"></p>
+    </div>
+    <div>
+      <button class="btn btn-warning mt-3" onclick="SubmitClick()" id="btnSubmit">Submit</button>
+    </div>
+  </div>
+</body>
+</html>

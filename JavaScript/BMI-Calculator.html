@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI Calculator</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        #name{
+            position: fixed;
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+		function calculateBMI() {
+			// Get values from inputs
+			var gender = document.getElementById("gender").value;
+			var height = document.getElementById("height").value;
+			var weight = document.getElementById("weight").value;
+
+			// Convert height to meters
+			height = height / 100;
+
+			// Calculate BMI
+			var bmi = weight / (height * height);
+
+			// Display result based on gender
+			var result = document.getElementById("result");
+			if (gender == "male") {
+				if (bmi < 18.5) {
+					result.innerHTML = "Your BMI is " + bmi.toFixed(2) + ", which means you are underweight.";
+				} else if (bmi < 25) {
+					result.innerHTML = "Your BMI is " + bmi.toFixed(2) + ", which means you are healthy.";
+				} else if (bmi < 30) {
+					result.innerHTML = "Your BMI is " + bmi.toFixed(2) + ", which means you are overweight.";
+				} else {
+					result.innerHTML = "Your BMI is " + bmi.toFixed(2) + ", which means you are obese.";
+				}
+			} else {
+				if (bmi < 18.5) {
+					result.innerHTML = "Your BMI is " + bmi.toFixed(2) + ", which means you are underweight.";
+				} else if (bmi < 24) {
+					result.innerHTML = "Your BMI is " + bmi.toFixed(2) + ", which means you are healthy.";
+				} else if (bmi < 30) {
+					result.innerHTML = "Your BMI is " + bmi.toFixed(2) + ", which means you are overweight.";
+				} else {
+					result.innerHTML = "Your BMI is " + bmi.toFixed
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+	<div class="container border border-4 border-dark mt-4 p-3 w-50">
+		<h1 class="bg-success text-white p-3">BMI Calculator</h1>
+		<form>
+			<div class="form-group">
+				<label for="gender">Gender:</label>
+				<select class="form-control" id="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="height">Height (in cm):</label>
+				<input type="number" class="form-control" id="height" placeholder="Enter height">
+			</div>
+			<div class="form-group">
+				<label for="weight">Weight (in kg):</label>
+				<input type="number" class="form-control" id="weight" placeholder="Enter weight">
+			</div>
+			<button type="button" class="btn btn-danger" onclick="calculateBMI()">Calculate</button>
+		</form>
+		<div class="mt-3" id="result"></div>
+        <div class="mt-4" id="name">Created by Ashish</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- JavaScript Code -->
+</body>
+</html>
